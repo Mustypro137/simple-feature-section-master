@@ -1,4 +1,12 @@
 import React from 'react';
+import photo1_1x from '../src/resources/photo_1.png';
+import photo1_2x from '../src/resources/photo_1@2x.png';
+
+import photo2_1x from '../src/resources/photo_2.png';
+import photo2_2x from '../src/resources/photo_2@2x.png';
+
+import photo3_1x from '../src/resources/photo_3.png';
+import photo3_2x from '../src/resources/photo_3@2x.png';
 
 export default function App() {
   return (
@@ -14,9 +22,8 @@ export default function App() {
             Provide a comprehensive understanding of the customer experience.
           </p>
           <img
-            src="src/resources/photo_2.png"
-            srcSet="src/resources/photo_2.png 1x,
-            src/resources/photo_2@2x.png 2x"
+            src={photo2_1x}
+            srcSet={`${photo2_1x} 1x, ${photo2_2x} 2x`}
             alt=""
           />
         </div>
@@ -29,9 +36,8 @@ export default function App() {
             insights.
           </p>
           <img
-            src="src/resources/photo_1.png"
-            srcSet="src/resources/photo_1.png 1x,
-            src/resources/photo_1@2x.png 2x"
+            src={photo1_1x}
+            srcSet={`${photo1_1x} 1x, ${photo1_2x} 2x`}
             alt=""
           />
         </div>
@@ -44,11 +50,10 @@ export default function App() {
             their feedback.
           </p>
           <img
-            src="src/resources/photo_3.png"
-            srcSet="src/resources/photo_3.png 1x,
-            src/resources/photo_3@2x.png 2x"
+            src={photo3_1x}
+            srcSet={`${photo3_1x} 1x, ${photo3_2x} 2x`}
             alt=""
-          />{' '}
+          />
         </div>
       </div>
     </main>
