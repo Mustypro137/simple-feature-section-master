@@ -1,4 +1,5 @@
 import React from 'react';
+
 export default function App() {
   return (
     <main>
@@ -42,12 +43,13 @@ export default function App() {
             Communicate the changes or improvements you've made in response to
             their feedback.
           </p>
-<img
+          <img
             src="src/resources/photo_3.png"
             srcSet="src/resources/photo_3.png 1x,
             src/resources/photo_3@2x.png 2x"
             alt=""
-          />        </div>
+          />{' '}
+        </div>
       </div>
     </main>
   );
